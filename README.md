@@ -2,6 +2,90 @@
 
 Practical examples on how to use the Arx Fatalis Scripting Language
 
+## Enabling the console in Arx Libertatis 1.2+
+
+https://wiki.arx-libertatis.org/Script_console
+
+### Heal the player / give mana
+
++25 HP for the player
+
+```asl
+specialfx heal 25
+```
+
++25 mana for the player
+
+```asl
+specialfx mana 25
+```
+
+### Teleport the player
+
+immediately teleport the player to level 15, no clicking on stair icon is needed
+"doesnt_matter" can be replaced by an entity id
+
+```asl
+teleport -nl 15 doesnt_matter
+```
+
+teleport player to level 18, rotate to 180deg with clicking on stair prompt
+"doesnt_matter" can be replaced by an entity id
+
+```asl
+teleport -al 180 18 doesnt_matter
+```
+
+### Add gold
+
+player gets 1000 gold
+
+```asl
+addgold 1000
+```
+
+### Resize the player
+
+make player 10% of it's original size - note that it doesn't change the scale of carried items
+
+```asl
+setscale 10
+```
+
+double the player's size
+
+```asl
+setscale 200
+```
+
+reset player's size back to default
+
+```asl
+setscale 100
+```
+
+### Invulnerability
+
+makes player be immunable to damages
+
+```asl
+invulnerability -p on
+```
+
+turns off player's invulnerability
+
+```asl
+invulnerability -p off
+```
+
+### Arx equivalent of console.log
+
+writes "hello" on top of the HUD
+
+```
+herosay "hello"
+```
+
 ## Sources
 
 - https://wiki.arx-libertatis.org/Arx_scripting_language
