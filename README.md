@@ -86,6 +86,20 @@ writes "hello" on top of the HUD
 herosay "hello"
 ```
 
+### Change player model
+
+Goblin
+
+```
+usemesh goblin_base/goblin_base.teo
+```
+
+Goblin lord
+
+```
+usemesh goblin_lord/goblin_lord.teo
+```
+
 ## Sources
 
 - https://wiki.arx-libertatis.org/Arx_scripting_language
