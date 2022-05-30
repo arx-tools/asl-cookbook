@@ -100,6 +100,14 @@ Goblin lord
 usemesh goblin_lord/goblin_lord.teo
 ```
 
+### Spawn stuff
+
+Wall block at the player's feet
+
+```
+spawn item special/wall_block/wall_block player
+```
+
 ## Sources
 
 - https://wiki.arx-libertatis.org/Arx_scripting_language
