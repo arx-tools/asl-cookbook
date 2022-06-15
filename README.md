@@ -108,6 +108,12 @@ Wall block at the player's feet
 spawn item special/wall_block/wall_block player
 ```
 
+One handed sabre at the player's feet
+
+```
+spawn item weapons/sabre/sabre player
+```
+
 ## Sources
 
 - https://wiki.arx-libertatis.org/Arx_scripting_language
