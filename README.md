@@ -114,6 +114,14 @@ One handed sabre at the player's feet
 spawn item weapons/sabre/sabre player
 ```
 
+### Player control
+
+Respawn dead player (thanks @dscharrer)
+
+```
+setplayercontrols on specialfx heal ^player_maxlife
+```
+
 ## Sources
 
 - https://wiki.arx-libertatis.org/Arx_scripting_language
