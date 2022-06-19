@@ -114,12 +114,18 @@ One handed sabre at the player's feet
 spawn item weapons/sabre/sabre player
 ```
 
-### Player control
+### Respawning
 
 Respawn dead player (thanks @dscharrer)
 
 ```
 setplayercontrols on specialfx heal ^player_maxlife
+```
+
+Respawn Lunshire, the human king
+
+```
+human_base_0082.revive -i
 ```
 
 ### Controlling a camera
