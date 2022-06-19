@@ -122,6 +122,20 @@ Respawn dead player (thanks @dscharrer)
 setplayercontrols on specialfx heal ^player_maxlife
 ```
 
+### Controlling a camera
+
+Switch to viewing the world through camera_0020
+
+```
+cameraactivate camera_0020
+```
+
+Turning off any ongoing camera
+
+```
+cameraactivate none
+```
+
 ## Sources
 
 - https://wiki.arx-libertatis.org/Arx_scripting_language
