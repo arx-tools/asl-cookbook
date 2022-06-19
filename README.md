@@ -124,6 +124,8 @@ setplayercontrols on specialfx heal ^player_maxlife
 
 Respawn Lunshire, the human king
 
+(after this the INITEND event will re-run)
+
 ```
 human_base_0082.revive -i
 ```
