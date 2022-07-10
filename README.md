@@ -44,6 +44,14 @@ player gets 1000 gold
 addgold 1000
 ```
 
+### Open any door
+
+Open the door to akbaa in the bunker
+
+```
+sendevent open light_door_0038 nop
+```
+
 ### Resize the player
 
 make player 10% of it's original size - note that it doesn't change the scale of carried items
@@ -78,10 +86,10 @@ turns off player's invulnerability
 invulnerability -p off
 ```
 
-turn off an npc's invulnerability
+turn off Iserbius'/half Akbaa's invulnerability
 
 ```asl
-<entity id>.invulnerability off
+akbaa_phase1_0001.invulnerability off
 ```
 
 ### Arx equivalent of console.log
