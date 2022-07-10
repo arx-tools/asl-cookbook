@@ -78,6 +78,12 @@ turns off player's invulnerability
 invulnerability -p off
 ```
 
+turn off an npc's invulnerability
+
+```asl
+<entity id>.invulnerability off
+```
+
 ### Arx equivalent of console.log
 
 writes "hello" on top of the HUD
@@ -112,6 +118,12 @@ One handed sabre at the player's feet
 
 ```
 spawn item weapons/sabre/sabre player
+```
+
+### Showing hidden entities
+
+```
+objecthide akbaa_phase_0002 no
 ```
 
 ### Respawning
