@@ -164,6 +164,22 @@ Turning off any ongoing camera
 cameraactivate none
 ```
 
+### Add items into player inventory
+
+Adding full set of stealth armor
+
+```
+inventory playeradd armor/legging_leather_stealth/legging_leather_stealth
+```
+
+```
+inventory playeradd armor/chest_leather_stealth/chest_leather_stealth
+```
+
+```
+inventory playeradd armor/helmet_leather_stealth/helmet_leather_stealth
+```
+
 ## Sources
 
 - https://wiki.arx-libertatis.org/Arx_scripting_language
