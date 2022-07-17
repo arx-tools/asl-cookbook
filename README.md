@@ -6,6 +6,8 @@ Practical examples on how to use the Arx Fatalis Scripting Language
 
 https://wiki.arx-libertatis.org/Script_console
 
+## Some useful commands
+
 ### Heal the player / give mana
 
 +25 HP for the player
@@ -178,6 +180,20 @@ inventory playeradd armor/chest_leather_stealth/chest_leather_stealth
 
 ```
 inventory playeradd armor/helmet_leather_stealth/helmet_leather_stealth
+```
+
+### Teleporting to different locations
+
+Castle
+
+```
+teleport -l 0 marker_0338
+```
+
+City of Arx
+
+```
+teleport -l 11 marker_0222
 ```
 
 ## Sources
