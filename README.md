@@ -196,6 +196,26 @@ City of Arx
 teleport -l 11 marker_0222
 ```
 
+Teleport to the castle without prompt
+
+```
+teleport -ln 0 marker_0338
+```
+
+### Harm an entity or player
+
+Do 10 points of damage to the player
+
+```
+dodamage player 10
+```
+
+Do minimal damage to Lunshire (when in the castle)
+
+```
+dodamage human_base_0082 1
+```
+
 ## Sources
 
 - https://wiki.arx-libertatis.org/Arx_scripting_language
