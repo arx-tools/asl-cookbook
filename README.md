@@ -54,6 +54,12 @@ Open the door to akbaa in the bunker
 sendevent open light_door_0038 nop
 ```
 
+Open the door in the tavern
+
+```
+sendevent open light_door_0073 nop
+```
+
 ### Resize the player
 
 make player 10% of it's original size - note that it doesn't change the scale of carried items
@@ -196,6 +202,12 @@ City of Arx
 teleport -l 11 marker_0222
 ```
 
+Tavern
+
+```
+teleport -l 12 marker_0549
+```
+
 Teleport to the castle without prompt
 
 ```
@@ -214,6 +226,14 @@ Do minimal damage to Lunshire (when in the castle)
 
 ```
 dodamage human_base_0082 1
+```
+
+### Collision
+
+Go through the locked door in the Tavern by disabling collision
+
+```
+light_door_0073.collision off
 ```
 
 ## Sources
