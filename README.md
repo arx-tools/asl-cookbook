@@ -236,6 +236,15 @@ Go through the locked door in the Tavern by disabling collision
 light_door_0073.collision off
 ```
 
+### Reverting back to the beta elevator at the goblin caves
+
+[See this in action](https://youtube.com/shorts/4SCrtFawKOM)
+
+```
+elevator_plateau_0002.usemesh elevator_plateau/elevator_plateau
+elevator_plateau_0002.move 0 -10 20
+```
+
 ## Sources
 
 - https://wiki.arx-libertatis.org/Arx_scripting_language
