@@ -236,7 +236,7 @@ Go through the locked door in the Tavern by disabling collision
 light_door_0073.collision off
 ```
 
-### Reverting back to the beta elevator at the goblin caves
+### Reverting back to the beta elevator at the goblin tunnels
 
 [See this in action](https://youtube.com/shorts/4SCrtFawKOM)
 
