@@ -172,6 +172,32 @@ Turning off any ongoing camera
 cameraactivate none
 ```
 
+### Cinematics
+
+Hiding HUD elements (healthbar, manabar, armor status)
+
+```
+playerinterface hide
+```
+
+Showing HUD elements (healthbar, manabar, armor status)
+
+```
+playerinterface show
+```
+
+Disable controls (keyboard, mouse)
+
+```
+setplayercontrols off
+```
+
+Enable controls (keyboard, mouse)
+
+```
+setplayercontrols on
+```
+
 ### Add items into player inventory
 
 Adding full set of stealth armor
