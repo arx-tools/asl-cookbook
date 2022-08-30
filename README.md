@@ -222,10 +222,16 @@ Castle
 teleport -l 0 marker_0338
 ```
 
-City of Arx
+City of Arx: entrance
 
 ```
 teleport -l 11 marker_0222
+```
+
+City of Arx: market square
+
+```
+teleport -l 11 marker_0466
 ```
 
 Tavern
@@ -234,11 +240,138 @@ Tavern
 teleport -l 12 marker_0549
 ```
 
+Output: next to Ortiern
+
+```
+teleport -l 12 marker_0480
+```
+
 Teleport to the castle without prompt
 
 ```
 teleport -ln 0 marker_0338
 ```
+
+Crypt level 1
+
+```
+teleport -l 17 marker_0249
+```
+
+Crypt level 2
+
+```
+teleport -l 19 marker_0199
+```
+
+Crypt level 3
+
+```
+teleport -l 21 marker_0236
+```
+
+Crypt level 3: over Gladivir's puzzle
+
+```
+teleport -l 21 marker_0541
+```
+
+Crypt level 4
+
+```
+teleport -l 22 marker_0254
+```
+
+Crypt level 5
+
+```
+teleport -l 23 marker_0238
+```
+
+Crypt level 5: next to Poxellis' tomb
+
+```
+teleport -l 23 path_marker_0022
+```
+
+Goblin prison: intro spawn at the game start
+
+```
+teleport -l 1 marker_0495
+```
+
+Greu's place
+
+```
+teleport -l 1 marker_0494
+```
+
+Ice dragon's place
+
+```
+teleport -l 1 camera_0131
+```
+
+Goblin caves: before the exit
+
+```
+teleport -l 15 marker_0793
+```
+
+Troll's place
+
+```
+teleport -l 2 marker_0511
+```
+
+Goblin kingdom: main hall
+
+```
+teleport -l 2 flee_marker_0041
+```
+
+Crystal caverns
+
+```
+teleport -l 13 marker_0633
+```
+
+The underground lake
+
+```
+teleport -l 3 marker_0743
+```
+
+Rebel camp
+
+```
+teleport -l 16 marker_0864
+```
+
+Order of Edurneum
+
+```
+teleport -l 5 marker_0450
+```
+
+Temple of illusions
+
+```
+teleport -l 5 marker_0409
+```
+
+Ratmen's place
+
+```
+teleport -l 6 marker_0256
+```
+
+Dwarves' place
+
+```
+teleport -l 7 camera_0008
+```
+
 
 ### Harm an entity or player
 
