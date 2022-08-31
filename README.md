@@ -214,6 +214,16 @@ inventory playeradd armor/chest_leather_stealth/chest_leather_stealth
 inventory playeradd armor/helmet_leather_stealth/helmet_leather_stealth
 ```
 
+Jewels
+
+```
+inventory playeradd jewelry/ruby/ruby
+```
+
+```
+inventory playeradd jewelry/diamond/diamond
+```
+
 ### Teleporting to different locations
 
 Castle
