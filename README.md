@@ -22,6 +22,14 @@ specialfx heal 25
 specialfx mana 25
 ```
 
+### Add items to the player
+
+Torch
+
+```asl
+inventory playeradd provisions/torch/torch
+```
+
 ### Teleport the player
 
 immediately teleport the player to level 15, no clicking on stair icon is needed
