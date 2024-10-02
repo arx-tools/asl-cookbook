@@ -30,6 +30,12 @@ Torch
 inventory playeradd provisions/torch/torch
 ```
 
+Lockpicking tools
+
+```asl
+inventory playeradd provisions/lockpicks/lockpicks
+```
+
 ### Teleport the player
 
 immediately teleport the player to level 15, no clicking on stair icon is needed
