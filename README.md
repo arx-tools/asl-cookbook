@@ -24,6 +24,8 @@ specialfx mana 25
 
 ### Add items to the player
 
+The base command is `inventory playeradd <folder name of * in graph/obj3d/interactive/items/*>/<subfolder in *>/<filename of asl file without extension>`
+
 Torch
 
 ```asl
@@ -34,6 +36,12 @@ Lockpicking tools
 
 ```asl
 inventory playeradd provisions/lockpicks/lockpicks
+```
+
+Health potion
+
+```asl
+inventory playeradd magic/potion_life/potion_life
 ```
 
 ### Teleport the player
