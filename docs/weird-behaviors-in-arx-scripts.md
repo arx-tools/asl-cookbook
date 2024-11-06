@@ -42,3 +42,10 @@ Running the following code - or any other timed commands:
 in the Arx Libertatis console will cause the following message to be repeated infinitely:
 
 `[W] ScriptEvent:379      [player:26] executeline: <-- unknown command: �`
+
+## ^speaking doesn't immediately becomes 1 when npc starts speaking
+
+There's a slight delay - maybe a second or so - when the value of `^speaking` shows 0 instead of 1
+after an NPC starts speaking. Probably the value of it is determined via polling and not set immediately.
+
+_Spotted this in Arx Libertatis 1.3, need to be tested if this is also the case for older versions of Arx_
