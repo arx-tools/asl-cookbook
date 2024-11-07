@@ -1,11 +1,11 @@
 # Weird behaviors in Arx scripts
 
-## ^rnd_0 will hang Arx in versions before Arx Libertatis 1.3
+## [bug] ^rnd_0 will hang Arx in versions before Arx Libertatis 1.3
 
 Before Arx Libertatis 1.3 calling `^rnd_0` will cause the game to go in an infinite loop and hang requiring a force quit.
 In later versions it returns `0.000000` as expected.
 
-## Conditions in one line will trigger an error
+## [bug] Conditions in one line will trigger an error
 
 Calling a condition in one line, like:
 
@@ -33,7 +33,7 @@ if (^rnd_100 > 50) {
 }
 ```
 
-## Running timers in Arx Libertatis console will trigger an infinitely repeated error
+## [bug] Running timers in Arx Libertatis console will trigger an infinitely repeating error
 
 Running the following code - or any other timed commands:
 
@@ -43,7 +43,9 @@ in the Arx Libertatis console will cause the following message to be repeated in
 
 `[W] ScriptEvent:379      [player:26] executeline: <-- unknown command: �`
 
-## Inconsistency between play and speak when executing a command after audio playback (documented in wiki)
+## [inconsistency] play and speak behave differently when having to execute a command after audio playback
+
+**Note that this is documented in the wiki**
 
 Writing a command after speak will make the command wait for the end of the audio playback.
 
@@ -67,3 +69,23 @@ play "ylside_death.wav" TIMERdelay -m 1 9000 herosay "hello"
 Of course this breaks down when the play command uses the `-p` flag which randomizes the pitch/speed between 90% and 110%
 
 read more at: https://wiki.arx-libertatis.org/Script:play#Audio_playback_command_comparison
+
+## [bug] showlocals / showglobals / showvars has an issue displaying variable types in Arx Libertatis console
+
+Some characters - ironically the most important ones which help determine the type of the variable - don't show:
+
+```
+[C] Console:405           > marker_0001.showlocals
+[I] ScriptedInterface:215  Local variables for marker_0001:
+�hud_line_1 = "player size: 50.00cm"
+�hud_line_2 = " "
+�hud_line_3 = " "
+�hud_line_4 = " "
+@tmp = 0
+�wholepart = 50
+�decimaldigit1 = 0
+�decimaldigit2 = 0
+�tmp = 0
+```
+
+Specifically the ones which are unique to the ISO-8859-15 character encoding: `§` (int) and `£` (string)
