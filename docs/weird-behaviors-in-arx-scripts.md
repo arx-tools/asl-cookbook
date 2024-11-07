@@ -42,3 +42,28 @@ Running the following code - or any other timed commands:
 in the Arx Libertatis console will cause the following message to be repeated infinitely:
 
 `[W] ScriptEvent:379      [player:26] executeline: <-- unknown command: �`
+
+## Inconsistency between play and speak when executing a command after audio playback (documented in wiki)
+
+Writing a command after speak will make the command wait for the end of the audio playback.
+
+```
+speak [goblin_misc] herosay "hello"
+```
+
+Doing the same with audio from the sfx folder will not work, the command will run immediately:
+
+```
+play "ylside_death.wav" herosay "hello"
+```
+
+One tedious workaround is to use a timer after the play command with a time that kinda matches the length of the audio:
+
+```
+// sfx/ylside_death.wav plays for around 9 seconds
+play "ylside_death.wav" TIMERdelay -m 1 9000 herosay "hello"
+```
+
+Of course this breaks down when the play command uses the `-p` flag which randomizes the pitch/speed between 90% and 110%
+
+read more at: https://wiki.arx-libertatis.org/Script:play#Audio_playback_command_comparison
