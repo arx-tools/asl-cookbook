@@ -113,7 +113,7 @@ There seems to be a limit to how many spells can emit particles at the same time
 
 ![Not all spells emit particles](img/not-all-spells-emit-particles.jpg?raw "Not all spells emit particles")
 
-## [limitation] halo only shows up around a limited number of entities at the same time
+## [limitation] halo's light effect only shows up around a limited number of entities
 
 Not every entity can have halos around them, most of them will remain invisible.
 
@@ -123,6 +123,8 @@ Every star on the image below is supposed to have a large halo around it:
 
 The same limitation can be observed multiple times in the following video, where respawning guards will get a halo
 around them briefly: https://www.youtube.com/watch?v=w_Lnp1C2Pd8
+
+**Note that halo still makes an entity glow, only the flare effect is not rendered correctly**
 
 ## [undocumented] behavior none doesn't seem to behave as expected
 
