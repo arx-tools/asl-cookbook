@@ -2,8 +2,8 @@
 
 ## [bug] ^rnd_0 will hang Arx in versions before Arx Libertatis 1.3
 
-Before Arx Libertatis 1.3 calling `^rnd_0` will cause the game to go in an infinite loop and hang requiring a force quit.
-In later versions it returns `0.000000` as expected.
+Before Arx Libertatis 1.3 calling `^rnd_0` will cause the game to go in an infinite loop and hang requiring a force
+quit. In later versions it returns `0.000000` as expected.
 
 ## [bug] Conditions in one line will trigger an error
 
@@ -68,7 +68,7 @@ play "ylside_death.wav" TIMERdelay -m 1 9000 herosay "hello"
 
 Of course this breaks down when the play command uses the `-p` flag which randomizes the pitch/speed between 90% and 110%
 
-read more at: https://wiki.arx-libertatis.org/Script:play#Audio_playback_command_comparison
+Read more at: https://wiki.arx-libertatis.org/Script:play#Audio_playback_command_comparison
 
 ## [bug] showlocals / showglobals / showvars has an issue displaying variable types in Arx Libertatis console
 
@@ -89,3 +89,70 @@ Some characters - ironically the most important ones which help determine the ty
 ```
 
 Specifically the ones which are unique to the ISO-8859-15 character encoding: `§` (int) and `£` (string)
+
+## [inconsistency] spellcast command
+
+- The `-x` flag mutes the sound of only 4 spells: Heal, Detect Trap, Armor and Lower Armor. There's a
+  [pull request](https://github.com/arx/ArxLibertatis/pull/293) which aims to implement it for all other
+  spells aswell.
+- The `-m` flag is supposed to hide the rune drawing part of spells, but it does not work everywhere,
+  for example the Curse spell is always drawn.
+- The radius of how far a spell's effect reach is determined by the player's casting skill. See this demonstrated
+  using Ignite and Douse in this video: https://www.youtube.com/watch?v=y63RQ5FAy40
+
+Read more at: https://wiki.arx-libertatis.org/Script:spellcast
+
+## [bug] curse spell
+
+The texture of the woodoo doll (`graph/obj3d/textures/(FX)_POUPéE.jpg`) cannot be replaced, probably because of the
+`é` in its filename. It seems to work fine
+
+## [limitation] Not all spells emit particles when too many spells are cast parallel
+
+There seems to be a limit to how many spells can emit particles at the same time.
+
+![Not all spells emit particles](img/not-all-spells-emit-particles.jpg?raw "Not all spells emit particles")
+
+## [limitation] halo only shows up around a limited number of entities at the same time
+
+Not every entity can have halos around them, most of them will remain invisible.
+
+Every star on the image below is supposed to have a large halo around it:
+
+![Not all stars have halos](img/number-of-halos.jpg?raw "Not all stars have halos")
+
+The same limitation can be observed multiple times in the following video, where respawning guards will get a halo
+around them briefly: https://www.youtube.com/watch?v=w_Lnp1C2Pd8
+
+## [undocumented] behavior none doesn't seem to behave as expected
+
+Let's say you want to make an NPC face towards the player. You can do that with the following 2 commands:
+
+```
+behavior friendly
+settarget player
+```
+
+Afterwards you should be able to turn the friendly behavior off to stop an NPC from looking at the player. However
+this does not work:
+
+```
+behavior none
+```
+
+Although one would expect this to be the solution, as `behavior none` can be seen 200 times in the original scripts.
+
+Instead the workaround is the following:
+
+```
+// making the NPC face the player:
+behavior stack
+behavior friendly
+settarget player
+
+// revert the behavior back:
+behavior unstack
+```
+
+Currently neither `behavior` or `settarget` is documented in the Arx Libertatis wiki, so we can only rely on what's
+inside existing scripts.
