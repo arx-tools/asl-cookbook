@@ -158,3 +158,8 @@ behavior unstack
 
 Currently neither `behavior` or `settarget` is documented in the Arx Libertatis wiki, so we can only rely on what's
 inside existing scripts.
+
+## ^dist\_<entity> is unreliable
+
+I have `marker_0004` placed at `60000/0/10000` and `marker_0005` placed at `10000/0/10000`.
+From within `marker_0005` I call `herosay ^dist_marker_0004` and instead of `4000` I get `4001.125`
