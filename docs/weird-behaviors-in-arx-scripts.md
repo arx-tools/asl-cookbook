@@ -165,3 +165,14 @@ I have `marker_0004` placed at `60000/0/10000` and `marker_0005` placed at `1000
 From within `marker_0005` I call `herosay ^dist_marker_0004` and instead of `4000` I get `4001.125`
 
 Arx's C++ code uses a "fast square root" function internally which makes results this inaccurate.
+
+## tweak remove is not working
+
+Ylsides are just `human_base` npcs with a tweak to their body + a skin change to their head:
+
+![Ylside tweaks](img/ylside-tweaks.jpg?raw "Ylside tweaks")
+
+According to the [Arx Libertatis source code](https://github.com/arx/ArxLibertatis/blob/master/src/script/ScriptedIOProperties.cpp#L518)
+tweaks can be removed with the `tweak remove` command.
+
+It doesn't do anything.
