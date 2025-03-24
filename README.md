@@ -182,7 +182,7 @@ sendevent attack_player black_thing_0013 nop
 black_thing_0013.setmovemode run
 ```
 
-#### Turn off black thing's invincibility
+#### Turn off black beast's invincibility
 
 ```
 black_thing_0013.setnpcstat armor_class 0
@@ -190,6 +190,12 @@ black_thing_0013.setnpcstat absorb 0
 black_thing_0013.setnpcstat resistmagic 0
 black_thing_0013.setnpcstat resistpoison 0
 black_thing_0013.setnpcstat resistfire 0
+```
+
+### Make the black beast only do 2 HP damage with its every attack
+
+```
+black_thing_0013.setnpcstat damages 2
 ```
 
 ### Respawning
