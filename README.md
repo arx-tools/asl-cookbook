@@ -164,6 +164,12 @@ spawn item weapons/sabre/sabre player
 objecthide akbaa_phase_0002 no
 ```
 
+### Spawn a black beast into the goblin prison cell next to where you spawn
+
+```
+spawn npc black_thing/black_thing skull_0013
+```
+
 ### Respawning
 
 Respawn dead player (thanks @dscharrer)
