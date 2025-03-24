@@ -170,6 +170,22 @@ objecthide akbaa_phase_0002 no
 spawn npc black_thing/black_thing skull_0013
 ```
 
+#### Make the black beast attack you by calling the following on the newly created black thing instance:
+
+```
+sendevent attack_player black_thing_0013 nop
+```
+
+#### Turn off black thing's invincibility
+
+```
+black_thing_0013.setnpcstat armor_class 0
+black_thing_0013.setnpcstat absorb 0
+black_thing_0013.setnpcstat resistmagic 0
+black_thing_0013.setnpcstat resistpoison 0
+black_thing_0013.setnpcstat resistfire 0
+```
+
 ### Respawning
 
 Respawn dead player (thanks @dscharrer)
