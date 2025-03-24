@@ -170,10 +170,16 @@ objecthide akbaa_phase_0002 no
 spawn npc black_thing/black_thing skull_0013
 ```
 
-#### Make the black beast attack you by calling the following on the newly created black thing instance:
+#### Make the black beast hostile towards the player
 
 ```
 sendevent attack_player black_thing_0013 nop
+```
+
+#### Make the black beast run towards the player instead of walking (after making them hostile)
+
+```
+black_thing_0013.setmovemode run
 ```
 
 #### Turn off black thing's invincibility
