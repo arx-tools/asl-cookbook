@@ -1,4 +1,4 @@
-# ASL Cookbook
+# ASL (Arx Scripting Language) Cookbook
 
 Practical examples on how to use the Arx Fatalis Scripting Language
 
